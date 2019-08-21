@@ -527,20 +527,20 @@ class Declarations {
 
   //  To test the scanner we can use a loop like the following:
 
-      do {
+      /*do {
         GetSym();                                 // Lookahead symbol
         OutFile.StdOut.Write(sym.kind, 3);
         OutFile.StdOut.WriteLine(" " + sym.val);  // See what we got
       } while (sym.kind != EOFSym);
-
-  /*  After the scanner is debugged we shall substitute this code:
+      */
+   //After the scanner is debugged we shall substitute this code:
 
       GetSym();                                   // Lookahead symbol
       Mod2Decl();                                 // Start to parse from the goal symbol
       // if we get back here everything must have been satisfactory
       Console.WriteLine("Parsed correctly");
 
-  */
+ 
       output.Close();
     } // Main
 
